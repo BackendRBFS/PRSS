@@ -17,7 +17,7 @@
         vertical-align: middle;
       }
       .slideshow-container {
-        max-width: 1500px;
+        max-width: 355px;
         position: relative;
         margin: auto;
       }
@@ -104,7 +104,7 @@
         }
       }
       /* On smaller screens, decrease text size */
-      @media only screen and (max-width: 1500px) {
+      @media only screen and (max-width: 335px) {
         .prev,
         .next,
         .text {
@@ -115,60 +115,60 @@
   </head>
   <body>
     <div class="slideshow-container">
-      <div class="mySlides fade">
+      <div class="Slides fade">
         <div class="numbertext"></div>
         <img src="image/01.jpg" style="width:100%">
         <div class="text"></div>
       </div>
-      <div class="mySlides fade">
+      <div class="Slides fade">
         <div class="numbertext"></div>
         <img src="image/02.jpg" style="width:100%">
         <div class="text"></div>
       </div>
-      <div class="mySlides fade">
+      <div class="Slides fade">
         <div class="numbertext"></div>
         <img src="image/03.jpg" style="width:100%">
         <div class="text"></div> 
       </div>
-            <div class="mySlides fade">
+            <div class="Slides fade">
         <div class="numbertext"></div>
         <img src="image/04.jpg" style="width:100%">
         <div class="text"></div> 
       </div>
-            <div class="mySlides fade">
+            <div class="Slides fade">
         <div class="numbertext"></div>
         <img src="image/05.jpg" style="width:100%">
         <div class="text"></div> 
       </div>
-            <div class="mySlides fade">
+            <div class="Slides fade">
         <div class="numbertext"></div>
         <img src="image/06.jpg" style="width:100%">
         <div class="text"></div> 
       </div>
-            <div class="mySlides fade">
+            <div class="Slides fade">
         <div class="numbertext"></div>
         <img src="image/07.jpg" style="width:100%">
         <div class="text"></div> 
       </div>
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <a class="prev" onclick="Slides(-1)">&#10094;</a>
+      <a class="next" onclick="Slides(1)">&#10095;</a>
     </div>
     <br>
     <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-      <span class="dot" onclick="currentSlide(4)"></span>
-      <span class="dot" onclick="currentSlide(5)"></span>
-      <span class="dot" onclick="currentSlide(6)"></span>
-      <span class="dot" onclick="currentSlide(7)"></span>
+      <span class="dot" onclick="Slide(1)"></span>
+      <span class="dot" onclick="Slide(2)"></span>
+      <span class="dot" onclick="Slide(3)"></span>
+      <span class="dot" onclick="Slide(4)"></span>
+      <span class="dot" onclick="Slide(5)"></span>
+      <span class="dot" onclick="Slide(6)"></span>
+      <span class="dot" onclick="Slide(7)"></span>
     </div>
     <script>
       var slideIndex = 0;
       showSlides();
       function showSlides() {
         var i;
-        var slides = document.getElementsByClassName("mySlides");
+        var slides = document.getElementsByClassName("Slides");
         for(i = 0; i < slides.length; i++) {
           slides[i].style.display = "none";
         }
